@@ -29,7 +29,7 @@ def updatePage(users, conn, cur):
                          user[0]))
     conn.commit()
 
-conn = psycopg2.connect(host='localhost', dbname='codeforces', user='postgres', password='1234')
+conn = psycopg2.connect(host='localhost', dbname='codeforces', user='postgres', password='')
 cur = conn.cursor()
 
 baseUrl='https://codeforces.com/ratings/organization/9105'
